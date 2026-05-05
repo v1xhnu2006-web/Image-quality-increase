@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Image Restorer</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; padding: 50px; background: #f4f4f9; }
+        .upload-container { border: 2px dashed #007bff; padding: 30px; border-radius: 10px; display: inline-block; }
+        #preview { max-width: 400px; margin-top: 20px; display: none; }
+        button { background: #007bff; color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <h2>Upload a Blurry Image to Enhance</h2>
+    <div class="upload-container">
+        <input type="file" id="imageInput" accept="image/*"><br><br>
+        <button onclick="enhanceImage()">Enhance Quality</button>
+    </div>
+    <div id="result">
+        <img id="preview" src="" alt="Enhanced Image">
+    </div>
+</body>
+</html>
+
